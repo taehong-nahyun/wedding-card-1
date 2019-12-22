@@ -365,7 +365,7 @@
 
 	$(function() {
 		$.ajax({
-			url: 'https://friacode.com/api/guestbook-list/',
+			url: 'https://www.friacode.com/api/guestbook-list/',
 			type: 'GET',
 			success: function(response){
 				$("#guestbook-list").append(response);
@@ -379,7 +379,7 @@
 		var contents = $("#contents").val();
 
 		$.ajax({
-			url: 'https://friacode.com/api/guestbook-create/',
+			url: 'https://www.friacode.com/api/guestbook-create/',
 			type: 'GET',
 			data: {name: name, contents: contents, password: password},
 			success: function(response){
