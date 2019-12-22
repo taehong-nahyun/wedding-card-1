@@ -381,7 +381,7 @@
 		$.ajax({
 			url: 'https://www.friacode.com/api/guestbook-create/',
 			type: 'GET',
-			data: {name: name, contents: contents, password: password},
+			data: {name: name, contents: contents},
 			success: function(response){
 				if (response.result == 'OK') {
 					alert("방명록을 작성해 주셔서 감사드립니다!");
