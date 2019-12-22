@@ -5,6 +5,7 @@
 		<meta charset=utf-8>
 		<meta name=description content="">
 		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 		<!-- Styles -->
 		<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/vendor/slick.css">
@@ -377,7 +378,6 @@
 
 		var name = $("#name").val();
 		var contents = $("#contents").val();
-		var password = $("#password").val();
 
 		$.ajax({
 			url: 'http://counsel.saapd.or.kr/api/guestbook-create/',
