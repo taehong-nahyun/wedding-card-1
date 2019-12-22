@@ -365,7 +365,7 @@
 
 	$(function() {
 		$.ajax({
-			url: 'http://localhost:8000/api/guestbook-list/',
+			url: 'http://counsel.saapd.or.kr/api/guestbook-list/',
 			type: 'GET',
 			success: function(response){
 				$("#guestbook-list").append(response);
@@ -380,7 +380,7 @@
 		var password = $("#password").val();
 
 		$.ajax({
-			url: 'http://localhost:8000/api/guestbook-create/',
+			url: 'http://counsel.saapd.or.kr/api/guestbook-create/',
 			type: 'GET',
 			data: {name: name, contents: contents, password: password},
 			success: function(response){
