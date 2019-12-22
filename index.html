@@ -21,6 +21,17 @@
 			<script src="js/vendor/html5shiv.min.js"></script>
 			<script src="js/vendor/respond.min.js"></script>
 		<![endif]-->
+
+		<style>
+			.comment__text {
+				text-align: left;
+			}
+
+			.comment__text p {
+				width: 100%;
+			}
+		</style>
+
 	</head>
 <body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="100">
 	<nav id="navbar" class="navbar navbar-expand-lg fixed-top p-0 text-white">
@@ -111,9 +122,8 @@
 					<h2 class="title--special">Feb 29th, 2020</h2>
 					<h3 class="date-section__place">
 						Myeongdong Laluche, Loire hall<br>
-						<font>명동 라루체, 루아르홀</font>
-				  </h3>
-					
+						<span>명동 라루체, 루아르홀</span>
+				  	</h3>
 			  </div>
 			</div>
 			<div id="timer" class="timer d-flex justify-content-center">
@@ -146,7 +156,6 @@
 					<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 						웨딩홀
 					</button>
-			
 				</div>
 				<div class="accordion__body">
 					<div id="collapseOne" class="collapse show" data-parent="#accordion">
@@ -214,8 +223,6 @@
 						<ul>
 							<p><b>강남 방향에서 오실 때</b><br>반포대교 > 남산3호터널(주말에 남산 터널 통과시 무료) > 통과 후, 쌍용 플래티넘 아파트 앞에서 우회전 > 아파트 끼고 좌회전 후 라루체 진입 </p>			<p><b>서울역 방향에서 오실 때</b><br>서울역에서 퇴계로 방면으로 진입 > 회현역 > 회현사거리에서 직진 > 스테이트타워와 뉴오리엔탈호텔 사이로 우회전 > 왼쪽 첫번째 골목 라루체</p>
 							<p><b>왕십리 방향에서 오실때</b><br>왕십리역 > 퇴계로에서 남대문 방향으로 직진 > 퇴계로2가 지하차도 > 회현사거리 신세계백화점 앞에서 유턴 후 직진 > 스테이트타워와 뉴오리엔탈호텔 사이로 우회전 > 왼쪽 첫번째 골목 라루체</p>
-				
-							
 						</ul>
 					</div>
 				</div>
@@ -275,19 +282,19 @@
 							<div class="col-md-8 mb-3 m-md-0">
 								<div class="form-group">
 									<label class="control-label" for="inputName">Your name</label>
-									<input type="text" class="form-control" id="inputName" required>
+									<input type="text" class="form-control" name="name" id="name" required>
 								</div>
 								<div class="form-group">
 									<label class="control-label" for="inputNumber">Message</label>
-									<input type="text" class="form-control" id="inputName" required>
+									<input type="text" class="form-control" name="contents" id="contents" required>
 								</div>
-									<div class="form-group">
+								<!--div class="form-group">
 									<label class="control-label" for="inputNumber">Password</label>
-									<input type="tel" class="form-control" id="inputNumber" required>
-								</div>
+									<input type="password" class="form-control" name="password" id="password" required>
+								</div-->
 							</div>
 							<div class="col-md-4 align-self-end">
-								<button type="submit" class="btn btn-outline-dark rounded-0 px-3 py-1 font-weight-bold">Send</button>
+								<button type="button" class="btn btn-outline-dark rounded-0 px-3 py-1 font-weight-bold" onclick="guestbook_send()">Send</button>
 							</div>
 						</div>
 						<div class="row">
@@ -301,120 +308,34 @@
 		</div>
 	</section>
 	
-		<section class="love-story section position-relative text-center">
+	<section class="love-story section position-relative text-center">
 
 		<div class="container">
 	
-
-		<div id="comments" class="comments-area">
-					    <h3 class="comments-title">
-					        축하 메시지		
-					    </h3>
-					    <!-- .comments-title -->
-					    <ol class="comment-list">
-					        <li class="comment even thread-even depth-1" id="li-comment-13">
-					            <div id="comment-13">
-					                <div class="comment-author vcard clearfix">
-					                    <div class="comment-authot__img">
-					                        <img alt="" src="http://2.gravatar.com/avatar/58b6060b0cca52af7b33787196323459?s=80&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/58b6060b0cca52af7b33787196323459?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">					
-					                    </div>
-					                    <div class="comment-author__meta">
-					                        <div class="comment-author__name"><a href="http://shields.org/est-laborum-blanditiis-quod-in-quia-voluptatem-es" rel="external nofollow" class="url">Dr. Hobart Abernathy</a></div>
-					                        <div class="comment-meta commentmetadata">
-					                            17 Mar 2019							(Edit)						
-				                          </div>
-					                        <div class="comment__text">
-					                            <p>Animi ex enim minus consequatur quia laborum. Laboriosam est unde et ad et id. Explicabo optio voluptas consequuntur aliquid voluptas. Ipsam quaerat laudantium molestias voluptas occaecati labore.</p>
-					                        </div>
-					                
-					                    </div>
-					                </div>
-					            </div>
-					        </li>
-					        <!-- #comment-## -->
-					        <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-14">
-					            <div id="comment-14">
-					                <div class="comment-author vcard clearfix">
-					                    <div class="comment-authot__img">
-					                        <img alt="" src="http://0.gravatar.com/avatar/9897267da4a99ad5e294d2048588777b?s=80&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/9897267da4a99ad5e294d2048588777b?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">					
-					                    </div>
-					                    <div class="comment-author__meta">
-					                        <div class="comment-author__name"><a href="http://www.feest.com/quaerat-sint-esse-quas-magnam-excepturi-fugit.htm" rel="external nofollow" class="url">Kyra Ritchie</a></div>
-					                        <div class="comment-meta commentmetadata">
-					                            17 Mar 2019							(Edit)					
-					                        </div>
-					                        <div class="comment__text">
-					                            <p>Possimus quia consectetur tenetur tempora mollitia sed. Tenetur quaerat dolorem illo saepe nihil consequatur id. Illo et rem error sed.</p>
-					                            <p>Quam qui ut ut vitae incidunt. Dicta voluptates qui voluptatibus debitis laudantium nostrum. Aut placeat tempore at ad incidunt expedita. Nostrum voluptatibus nisi qui laboriosam numquam et. Sit at quia sed ut consequuntur reprehenderit.</p>
-					                        </div>
-					                 
-					                    </div>
-					                </div>
-					            </div>
-					        </li>
-					        <!-- #comment-## -->
-					        <li class="comment even thread-even depth-1" id="li-comment-15">
-					            <div id="comment-15">
-					                <div class="comment-author vcard clearfix">
-					                    <div class="comment-authot__img">
-					                        <img alt="" src="http://0.gravatar.com/avatar/973843a37c0e51b74c62ddeaee739046?s=80&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/973843a37c0e51b74c62ddeaee739046?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">					
-					                    </div>
-					                    <div class="comment-author__meta">
-					                        <div class="comment-author__name"><a href="http://fadel.com/id-excepturi-rerum-cumque-aspernatur-a-expedit" rel="external nofollow" class="url">Priscilla White</a></div>
-					                        <div class="comment-meta commentmetadata">
-					                            17 Mar 2019							(Edit)						
-					                        </div>
-					                        <div class="comment__text">
-					                            <p>Minus rem suscipit ut. Officia officia cum et dolor. Incidunt recusandae maxime eum maiores laudantium veniam nihil. Ut molestias totam accusantium sunt. Fuga laborum eaque quo delectus fuga quo.</p>
-					                            <p>Voluptate omnis iusto qui ab exercitationem a ab ut. Consequatur sunt accusantium qui eum asperiores quasi enim.</p>
-					                        </div>
-					                  
-					                    </div>
-					                </div>
-					            </div>
-					        </li>
-					        <!-- #comment-## -->
-					        <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-16">
-					            <div id="comment-16">
-					                <div class="comment-author vcard clearfix">
-					                    <div class="comment-authot__img">
-					                        <img alt="" src="http://1.gravatar.com/avatar/ab60e2609043bfe1bb698e953ce17bb5?s=80&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/ab60e2609043bfe1bb698e953ce17bb5?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">					
-					                    </div>
-					                    <div class="comment-author__meta">
-					                        <div class="comment-author__name"><a href="http://davis.com" rel="external nofollow" class="url">Prof. Stone Gleason</a></div>
-					                        <div class="comment-meta commentmetadata">
-					                            17 Mar 2019							(Edit)				
-					                        </div>
-					                        <div class="comment__text">
-					                            <p>Sed illum eos voluptates molestiae quisquam. Hic blanditiis consectetur dicta minima. Ipsam et consectetur pariatur sapiente. Tempore enim laudantium numquam dolorum.</p>
-					                        </div>
-					                   
-					                    </div>
-					                </div>
-					            </div>
-					        </li>
-					        <!-- #comment-## -->
-					    </ol>
-					    <nav aria-label="...">
-						<ul class="pagination mb-4 mb-md-0">
-							<li class="page-item disabled">
-								<span class="page-link rounded-0">Previous</span>
-							</li>
-							<li class="page-item active">
-								<span class="page-link">
-									1
-									<span class="sr-only">(current)</span>
-								</span>
-							</li>
-							<li class="page-item"><a class="page-link" href="#">2</a></li>
-							<li class="page-item"><a class="page-link" href="#">3</a></li>
-							<li class="page-item"><a class="page-link" href="#">4</a></li>
-							<li class="page-item">
-								<a class="page-link rounded-0" href="#">Next</a>
-							</li>
-						</ul>
-					</nav>
-					</div>
+			<div id="comments" class="comments-area">
+				<h3 class="comments-title">축하 메시지</h3>
+				<!-- .comments-title -->
+				<ol class="comment-list" id="guestbook-list"></ol>
+				<nav aria-label="...">
+					<ul class="pagination mb-4 mb-md-0">
+						<li class="page-item disabled">
+							<span class="page-link rounded-0">Previous</span>
+						</li>
+						<li class="page-item active">
+							<span class="page-link">
+								1
+								<span class="sr-only">(current)</span>
+							</span>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item">
+							<a class="page-link rounded-0" href="#">Next</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</section>
 	<!-- Footer -->
@@ -439,5 +360,39 @@
 <script src="js/vendor/masonry.pkgd.min.js"></script>
 <script src="js/vendor/lightbox.min.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+
+	$(function() {
+		$.ajax({
+			url: 'http://localhost:8000/api/guestbook-list/',
+			type: 'GET',
+			success: function(response){
+				$("#guestbook-list").append(response);
+			}
+		});
+	})
+
+	function guestbook_send(){
+
+		var name = $("#name").val();
+		var contents = $("#contents").val();
+		var password = $("#password").val();
+
+		$.ajax({
+			url: 'http://localhost:8000/api/guestbook-create/',
+			type: 'GET',
+			data: {name: name, contents: contents, password: password},
+			success: function(response){
+				if (response.result == 'OK') {
+					alert("방명록을 작성해 주셔서 감사드립니다!");
+					location.reload();
+				}
+			}
+		});
+	}
+
+</script>
+
 </body>
 </html>
