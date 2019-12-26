@@ -325,7 +325,7 @@ a:hover {
 }
 
 .comments-area .comment-author__meta {
-	margin-left: 104px;
+	/* margin-left: 104px; */
 	position: relative;
 }
 
