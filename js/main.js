@@ -24,7 +24,7 @@ Table of Contents:
 	/* 1. Windows on Load
 	====================*/
 	$(window).on('load', function() {
-		$('.loader').delay(2400).fadeOut('fast');
+		$('.loader').delay(2500).fadeOut('fast');
 		var $grid = $('.grid').masonry({
 			itemSelector: '.grid-item',
 			percentPosition: true,
